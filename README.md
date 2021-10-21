@@ -40,6 +40,9 @@ I have used these for years and type them a hundred times per day.
     > When you type this command in a new folder, this "initializes" a `git` repository and begins tracking the files in that folder. It will create a hidden folder called `.git` that contains the directory structure for your project version control.
     >
     > You can now continue working on your project, create, edit, delete, and move files around. As you make changes, you are encouraged to `add` and `commmit` regularly, so you can always track your progress and create "snapshots" of your code as your project grows.
+    >
+    > In this screenshot, before I run `git init`, I run the command `ll`. In Linux that command says "List Files". After `ll` I run `git init` and you see the following when I run `ll` again, it shows a folder called `.git` in the new-test-folder`.
+    > ![screenshot-git-init-new-folder.png](/src/images/screenshot-git-init-new-folder.png)
 2. `git clone`
 
     > This will make a copy of a remote repo on your local machine. This will contain all the files and folder structure, the entire commit history and the branches.
@@ -52,7 +55,7 @@ I have used these for years and type them a hundred times per day.
     > >
     > > When you `cd` into that folder, you will see all the project files and folders.
     > >
-    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git`
+    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git` > ![screenshot-git-clone-repo.png](/src/images/screenshot-git-clone-repo.png)
 
     ***
 
@@ -73,6 +76,11 @@ I have used these for years and type them a hundred times per day.
     ***
 
 3. `git status`
+
+    > As you make your changes, and you create & delete files, `git` will keep track of everything.
+    >
+    > It will track new files that have not been added. It will track files that have been deleted. And of course it will track files that have been modified.
+    > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
 
 4. `git add`
 
