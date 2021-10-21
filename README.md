@@ -100,27 +100,30 @@ I have used these for years and type them a hundred times per day.
 
 5. `git commit`
 
-    > Before I begin working on the styles of the homepage, i decide to `git commit` my progress.
-
-    > You then start working on your `styles.css` file and begin simple and plain: `body background`, `#container margin/padding`, `h1-h2 font-size`. Simple - right?
+    > Before I begin working on the styles of the homepage, I decide to `git commit` my current progress for the homepage.
+    > I could run two separate commands like this `git add src/index.html` and then do `git commit -m'my commit message'`
     >
-    > But you forgot to include the `<link>` to your stylesheet, so you add that to your `index.html` page.
+    > But I sometimes like to put the two together, like this:
     >
-    > So you do `git add index.html styles.css` because you made changes to both. You can made that command shorter like this `git add .` and it will commit ALL the files you made changes to since the last commit.
+    > `git add src/index.html && git commit -m'index.html added H1 and #container with paragraphs'`
     >
-    > After your `git add .` you have to `git commit -m'added link tag to index.html and new colors to styles.css'`
-    >
-    > Good! Now you are caught up!
+    > ![screenshot-git-add-commit.png](/src/images/screenshot-git-add-commit.png)
 
 ---
 
-6. `git branch`
-7. `git merge`
-8. `git pull`
-9. `git push`
+## To Do (for another day):
 
-[Difference between forking and cloning a repo](https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189)
+-   [ ] 6. `git branch`
+-   [ ] 7. `git merge`
+-   [ ] 8. `git pull`
+-   [ ] 9. `git push`
 
-[About remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
-[Configuring a remote for a fork](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork)
-[Syncing a fork](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
+## Recommended reading
+
+-   [Difference between forking and cloning a repo](https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189)
+
+-   [About remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
+
+-   [Configuring a remote for a fork](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork)
+
+-   [Syncing a fork](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
