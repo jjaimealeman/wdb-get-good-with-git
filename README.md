@@ -87,15 +87,20 @@ I have used these for years and type them a hundred times per day.
     >
     > It will track new files that have not been added. It will track files that have been deleted. And of course it will track files that have been modified.
     >
-    > Here you see that I modified `readme.md` and `src/index.html`. I also deleted `file-that-i-will-delete.txt` and `src/images/screenshot-git-status.png` > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
+    > Here you see that I modified `readme.md` and `src/index.html` as shown with a red capital "M" on the left.
+    >
+    > I also deleted `file-that-i-will-delete.txt` and `src/images/screenshot-git-status.png` as shown with a red capital "D" on the left.
+    > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
 
 4. `git add`
 
-    > You start with a plain `.html` document skeleton and later plan on including Bootstrap with a fancy carousel and a nice modal popup. You decide to `git add index.html` before you add Bootstrap.
+    > I start with a plain `.html` document skeleton and later plan on including some Google Fonts and a nice background image. I decide to `git add src/index.html` before I work on the CSS.
+    >
+    > So I `git status` followed by `git add src/index.html` > ![screenshot-git-add-index.png](/src/images/screenshot-git-add-index.png)
 
 5. `git commit`
 
-    > Before you begin work on styling with Bootstrap, you do `git commit -m'created index.html home page'`
+    > Before I begin working on the styles of the homepage, i decide to `git commit` my progress.
 
     > You then start working on your `styles.css` file and begin simple and plain: `body background`, `#container margin/padding`, `h1-h2 font-size`. Simple - right?
     >
