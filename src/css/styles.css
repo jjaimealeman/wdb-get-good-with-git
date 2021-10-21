@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+
+:root {
+    /*===============================================================================================================
+        WHY DO I PREFER TO COLOR IN HSL OVER HEX?
+        I find that it gives me a consistent color palette. In this case, dark/light gray, and dark/light blue ;)
+            https://www.smashingmagazine.com/2021/07/hsl-colors-css/
+            https://blog.bitsrc.io/hex-vs-rgb-vs-hsl-what-is-the-best-method-to-set-css-color-property-f45d2debeee/
+            https://blog.webdevsimplified.com/2021-06/hsl-color-format/
+    ===============================================================================================================*/
+
+    /* #3d4a5c // rgb(61, 74, 92) // hsl(215, 20%, 30%) */
+    --text: hsl(215, 20%, 30%);
+
+    /* #e0e0eb // rgb(224, 229, 235) // hsl(215, 20%, 90%) */
+    --bg_body: hsl(215, 20%, 90%);
+
+    /* #f0f2f5 // rgb(240, 242, 245) // hsl(215, 20%, 95%) */
+    --bg_page: hsl(215, 20%, 95%);
+
+    /* #2d72d2 // rgb(45, 114, 210) // hsl(215, 65%, 50%) */
+    --highlight: hsl(215, 65%, 50%);
+
+    /* #c0d5f2 // rgb(192, 213, 242) // hsl(215, 65%, 85%) */
+    --highlight_lighter: hsl(215, 65%, 85%);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: var(--bg_body);
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    background: var(--bg_page);
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    width: 800px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+}
+code {
+    background: var(--bg_body);
+    color: var(--highlight);
+    border-radius: 4px;
+    padding: 3px;
+}
+p {
+    line-height: 1.75em;
+    width: 65ch;
+}
+p a {
+    border-bottom: 1px solid var(--highlight);
+    color: var(--text);
+    outline: 3px solid transparent;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+p a:hover,
+p a:focus {
+    background: var(--highlight_lighter);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 3px;
+    outline: 3px solid var(--highlight_lighter);
+}
+
+::selection {
+    background: var(--highlight_lighter); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: var(--highlight_lighter); /* Gecko Browsers */
+}
