@@ -80,6 +80,8 @@ I have used these for years and type them a hundred times per day.
     > As you make your changes, and you create & delete files, `git` will keep track of everything.
     >
     > It will track new files that have not been added. It will track files that have been deleted. And of course it will track files that have been modified.
+    >
+    > Here you see that I modified `readme.md`.
     > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
 
 4. `git add`
