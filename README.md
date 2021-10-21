@@ -34,6 +34,12 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 
 I have used these for years and type them a hundred times per day.
 
+> ### Below I will share some screenshots to better display the `git` commands and their output.
+
+> ## **The output in your terminal will be different than mine!**
+>
+> ## I've modified mine for personal satisfaction. Dotfiles available upon request.
+
 1. `git init`
     > The subcomand `init` is short for "initialize".
     >
@@ -81,8 +87,7 @@ I have used these for years and type them a hundred times per day.
     >
     > It will track new files that have not been added. It will track files that have been deleted. And of course it will track files that have been modified.
     >
-    > Here you see that I modified `readme.md`.
-    > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
+    > Here you see that I modified `readme.md` and `src/index.html`. I also deleted `file-that-i-will-delete.txt` and `src/images/screenshot-git-status.png` > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
 
 4. `git add`
 
