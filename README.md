@@ -2,7 +2,7 @@
 
 Welcome to our new repo, where **we all** learn to get good with `git` 😁
 
-[!screenshot of this repo in kitty](path-to-image.jpg)
+![screenshot of this repo in kitty](src/images/screenshot-this-repo.png)
 
 As you all know, using `git` in a work environment is crucial for a Web Developers workflow. It is even more important when working with others.
 
@@ -48,7 +48,8 @@ I have used these for years and type them a hundred times per day.
     > You can now continue working on your project, create, edit, delete, and move files around. As you make changes, you are encouraged to `add` and `commmit` regularly, so you can always track your progress and create "snapshots" of your code as your project grows.
     >
     > In this screenshot, before I run `git init`, I run the command `ll`. In Linux that command says "List Files". After `ll` I run `git init` and you see the following when I run `ll` again, it shows a folder called `.git` in the new-test-folder`.
-    > ![screenshot-git-init-new-folder.png](/src/images/screenshot-git-init-new-folder.png)
+    >
+    > ![screenshot-git-init-new-folder.png](src/images/screenshot-git-init-new-folder.png)
 2. `git clone`
 
     > This will make a copy of a remote repo on your local machine. This will contain all the files and folder structure, the entire commit history and the branches.
@@ -61,7 +62,9 @@ I have used these for years and type them a hundred times per day.
     > >
     > > When you `cd` into that folder, you will see all the project files and folders.
     > >
-    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git` > ![screenshot-git-clone-repo.png](/src/images/screenshot-git-clone-repo.png)
+    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git`
+    >
+    > ![screenshot-git-clone-repo.png](src/images/screenshot-git-clone-repo.png)
 
     ***
 
@@ -90,13 +93,16 @@ I have used these for years and type them a hundred times per day.
     > Here you see that I modified `readme.md` and `src/index.html` as shown with a red capital "M" on the left.
     >
     > I also deleted `file-that-i-will-delete.txt` and `src/images/screenshot-git-status.png` as shown with a red capital "D" on the left.
-    > ![screenshot-git-status.png](/src/images/screenshot-git-status.png)
+    >
+    > ![screenshot-git-status.png](src/images/screenshot-git-status.png)
 
 4. `git add`
 
     > I start with a plain `.html` document skeleton and later plan on including some Google Fonts and a nice background image. I decide to `git add src/index.html` before I work on the CSS.
     >
-    > So I `git status` followed by `git add src/index.html` > ![screenshot-git-add-index.png](/src/images/screenshot-git-add-index.png)
+    > So I `git status` followed by `git add src/index.html`
+    >
+    > ![screenshot-git-add-index.png](src/images/screenshot-git-add-index.png)
 
 5. `git commit`
 
@@ -107,7 +113,7 @@ I have used these for years and type them a hundred times per day.
     >
     > `git add src/index.html && git commit -m'index.html added H1 and #container with paragraphs'`
     >
-    > ![screenshot-git-add-commit.png](/src/images/screenshot-git-add-commit.png)
+    > ![screenshot-git-add-commit.png](src/images/screenshot-git-add-commit.png)
 
 ---
 
