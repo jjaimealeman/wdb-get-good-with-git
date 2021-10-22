@@ -1,0 +1,101 @@
+/*
+* Borrowed from #container in original style sheet
+*/
+.container {
+    background: var(--bg_page);
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    width: 800px;
+}
+
+/*
+* Nav Styling
+*/
+nav.main-nav {
+    width: 95vw;
+    font-size: 1.2rem;
+}
+
+nav.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    color: var(--highlight);
+    transition: text-shadow .15s ease-in-out;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a:focus {
+    text-shadow: var(--highlight_lighter) 0 0 .5em;
+}
+
+/*
+* Clock styling
+*/
+div.aarons-clock {
+    opacity: 0;
+    animation: 1 clock-show 1s 1s forwards;
+    font-family: monospace;
+    font-size: 2rem;
+    color: var(--bg_page);
+    background: var(--text);
+    width: 9rem;
+    text-align: center;
+    padding: .1rem;
+    border-radius: .5rem;
+    border: 5px solid var(--highlight_lighter);
+    box-shadow: 0 .3rem var(--text);
+    text-shadow: #000 0 .1rem .1rem;
+    /* I am very sorry, I prefer hex, feel free to change :D:D */
+}
+
+div.aarons-clock > span:nth-of-type(4) {
+    font-size: .7em;
+    margin-left: .2em;
+}
+
+/*
+* Hide the clock while javascript initializes
+*/
+@keyframes clock-show {
+    0% {
+        opacity: 0;
+    }
+    40%, 100% {
+        opacity: 1;
+    }
+}
+
+div.aarons-clock > span:nth-of-type(2) {
+    margin: auto -.1em;  
+}
+
+
+div.aarons-clock > span:nth-of-type(2).hide {
+    opacity: 0;   
+}
+
+/*
+* Seperator animation was out of sync with seconds interval
+* when handled in CSS, moved to javascript to fix
+*/
+
+/* div.aarons-clock > span:nth-of-type(2) {
+    animation: flash-clock-seperator 2s infinite;
+}
+
+@keyframes flash-clock-seperator {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 99% {
+        opacity: 0;
+    }
+} */
+
+
