@@ -1,0 +1,3 @@
+#### Hi guys!
+
+My name is Agnieszka, I'm 30yrs old polish girl who lives in England :gb: (pardon my English!). I had some experience with HTML/CSS while I was in high school as I was into a design for blogs. Then I forgot about it for years as I had to get a "proper" education. I started to code 2 years ago but it all took more speed when I finally understood Javascript and started to build things in May this year. Now I'm into React and I hope I will be able to break into the industry soon. I started to love coding and can use all my free time to do it at the moment. I look forward to collaborating with you guys, I hope the different time zones won't be an issue!
