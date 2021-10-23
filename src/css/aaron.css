@@ -26,12 +26,12 @@ nav.main-nav ul {
 nav.main-nav a {
     text-decoration: none;
     color: var(--highlight);
-    transition: text-shadow .15s ease-in-out;
+    transition: text-shadow 0.15s ease-in-out;
 }
 
 nav.main-nav a:hover,
 nav.main-nav a:focus {
-    text-shadow: var(--highlight_lighter) 0 0 .5em;
+    text-shadow: var(--highlight_lighter) 0 0 0.5em;
 }
 
 /*
@@ -46,17 +46,17 @@ div.aarons-clock {
     background: var(--text);
     width: 9rem;
     text-align: center;
-    padding: .1rem;
-    border-radius: .5rem;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
     border: 5px solid var(--highlight_lighter);
-    box-shadow: 0 .3rem var(--text);
-    text-shadow: #000 0 .1rem .1rem;
+    box-shadow: 0 0.3rem var(--text);
+    text-shadow: #000 0 0.1rem 0.1rem;
     /* I am very sorry, I prefer hex, feel free to change :D:D */
 }
 
 div.aarons-clock > span:nth-of-type(4) {
-    font-size: .7em;
-    margin-left: .2em;
+    font-size: 0.7em;
+    margin-left: 0.2em;
 }
 
 /*
@@ -66,18 +66,18 @@ div.aarons-clock > span:nth-of-type(4) {
     0% {
         opacity: 0;
     }
-    40%, 100% {
+    40%,
+    100% {
         opacity: 1;
     }
 }
 
 div.aarons-clock > span:nth-of-type(2) {
-    margin: auto -.1em;  
+    margin: auto -0.1em;
 }
 
-
 div.aarons-clock > span:nth-of-type(2).hide {
-    opacity: 0;   
+    opacity: 0;
 }
 
 /*
@@ -97,5 +97,3 @@ div.aarons-clock > span:nth-of-type(2).hide {
         opacity: 0;
     }
 } */
-
-
