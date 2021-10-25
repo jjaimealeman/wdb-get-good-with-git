@@ -13,7 +13,8 @@
 * Nav Styling
 */
 nav.main-nav {
-    width: 95vw;
+    /* width: 95vw; */
+    width: 100%;
     font-size: 1.2rem;
 }
 
