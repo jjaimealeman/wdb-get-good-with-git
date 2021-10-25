@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #11151c;
+}
+.img {
+    width: 30px;
+    margin: 30px;
+    position: relative;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: all 0.1s ease-in;
+}
+.img:hover {
+    border-color: #fff;
+}
+h1 {
+    text-align: center;
+    font-family: "Georama", sans-serif;
+    margin-bottom: 0;
+    color: #5bc0be;
+}
+#input-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#tv-show {
+    width: 250px;
+    height: 35px;
+    outline: 0;
+    background: #3a506b;
+    color: #fff;
+    font-family: "Georama", sans-serif;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+}
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+button {
+    margin-top: 25px;
+    background: #e4c1f9;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    color: #000;
+    font-family: "Georama", sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.1s ease-in;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    background: #d8315b;
+    color: #fff;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+.image-container img {
+    justify-self: center;
+    border-radius: 5px;
+}
+
+@media (max-width: 1330px) {
+    .image-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1030px) {
+    .image-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 830px) {
+    .image-container {
+        max-width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .image-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
