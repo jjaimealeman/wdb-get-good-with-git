@@ -2,7 +2,7 @@
 
 Welcome to our new repo, where **we all** learn to get good with `git` 😁
 
-![screenshot of this repo in kitty](src/images/screenshot-this-repo.png)
+![screenshot of this repo in kitty](docs/images/screenshot-this-repo.png)
 
 As you all know, using `git` in a work environment is crucial for a Web Developers workflow. It is even more important when working with others.
 
@@ -49,7 +49,7 @@ I have used these for years and type them a hundred times per day.
     >
     > In this screenshot, before I run `git init`, I run the command `ll`. In Linux that command says "List Files". After `ll` I run `git init` and you see the following when I run `ll` again, it shows a folder called `.git` in the new-test-folder`.
     >
-    > ![screenshot-git-init-new-folder.png](src/images/screenshot-git-init-new-folder.png)
+    > ![screenshot-git-init-new-folder.png](docs/images/screenshot-git-init-new-folder.png)
 2. `git clone`
 
     > This will make a copy of a remote repo on your local machine. This will contain all the files and folder structure, the entire commit history and the branches.
@@ -64,7 +64,7 @@ I have used these for years and type them a hundred times per day.
     > >
     > > `git clone https://github.com/jjaimealeman/wdb-get-good-with-git.git`
     >
-    > ![screenshot-git-clone-repo.png](src/images/screenshot-git-clone-repo.png)
+    > ![screenshot-git-clone-repo.png](docs/images/screenshot-git-clone-repo.png)
 
     ***
 
@@ -90,30 +90,30 @@ I have used these for years and type them a hundred times per day.
     >
     > It will track new files that have not been added. It will track files that have been deleted. And of course it will track files that have been modified.
     >
-    > Here you see that I modified `readme.md` and `src/index.html` as shown with a red capital "M" on the left.
+    > Here you see that I modified `readme.md` and `docs/index.html` as shown with a red capital "M" on the left.
     >
-    > I also deleted `file-that-i-will-delete.txt` and `src/images/screenshot-git-status.png` as shown with a red capital "D" on the left.
+    > I also deleted `file-that-i-will-delete.txt` and `docs/images/screenshot-git-status.png` as shown with a red capital "D" on the left.
     >
-    > ![screenshot-git-status.png](src/images/screenshot-git-status.png)
+    > ![screenshot-git-status.png](docs/images/screenshot-git-status.png)
 
 4. `git add`
 
-    > I start with a plain `.html` document skeleton and later plan on including some Google Fonts and a nice background image. I decide to `git add src/index.html` before I work on the CSS.
+    > I start with a plain `.html` document skeleton and later plan on including some Google Fonts and a nice background image. I decide to `git add docs/index.html` before I work on the CSS.
     >
-    > So I `git status` followed by `git add src/index.html`
+    > So I `git status` followed by `git add docs/index.html`
     >
-    > ![screenshot-git-add-index.png](src/images/screenshot-git-add-index.png)
+    > ![screenshot-git-add-index.png](docs/images/screenshot-git-add-index.png)
 
 5. `git commit`
 
     > Before I begin working on the styles of the homepage, I decide to `git commit` my current progress for the homepage.
-    > I could run two separate commands like this `git add src/index.html` and then do `git commit -m'my commit message'`
+    > I could run two separate commands like this `git add docs/index.html` and then do `git commit -m'my commit message'`
     >
     > But I sometimes like to put the two together, like this:
     >
-    > `git add src/index.html && git commit -m'index.html added H1 and #container with paragraphs'`
+    > `git add docs/index.html && git commit -m'index.html added H1 and #container with paragraphs'`
     >
-    > ![screenshot-git-add-commit.png](src/images/screenshot-git-add-commit.png)
+    > ![screenshot-git-add-commit.png](docs/images/screenshot-git-add-commit.png)
 
 ---
 
