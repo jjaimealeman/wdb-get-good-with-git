@@ -58,11 +58,11 @@ I have used these for years and type them a hundred times per day.
     >
     > > Option 1: **Default method**
     > >
-    > > This will clone this repo into a new folder that I chose to name "wtb-get-good-with-git".
+    > > This will clone this repo into a new folder that I chose to name "wdb-get-good-with-git".
     > >
     > > When you `cd` into that folder, you will see all the project files and folders.
     > >
-    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git`
+    > > `git clone https://github.com/jjaimealeman/wdb-get-good-with-git.git`
     >
     > ![screenshot-git-clone-repo.png](src/images/screenshot-git-clone-repo.png)
 
@@ -72,7 +72,7 @@ I have used these for years and type them a hundred times per day.
     > >
     > > Create your own folder and run the command there.
     > >
-    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git .`
+    > > `git clone https://github.com/jjaimealeman/wdb-get-good-with-git.git .`
 
     ***
 
@@ -80,7 +80,7 @@ I have used these for years and type them a hundred times per day.
     > >
     > > This will clone this repo into a new folder called "name-of-new-folder".
     > >
-    > > `git clone https://github.com/jjaimealeman/wtb-get-good-with-git.git name-of-new-folder`
+    > > `git clone https://github.com/jjaimealeman/wdb-get-good-with-git.git name-of-new-folder`
 
     ***
 
