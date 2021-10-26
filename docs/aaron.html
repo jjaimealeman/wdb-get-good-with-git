@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web Developers Bootcamp Project</title>
-        <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="stylesheet" href="css/aaron.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developers Bootcamp Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <body>
-        <div class="container">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aaron.html">Aarons Page</a></li>
-                </ul>
-            </nav>
-            <h1>My name is Aaron</h1>
-            <h2>I know what time it is</h2>
-            <h3>I well tell you the time</h3>
-            <h4>The time is currently</h4>
-            <div class="aarons-clock">
-                <span></span><span>:</span><span></span><span></span>
-            </div>
-        </div>
+    <link rel="stylesheet" href="css/aaron.css" />
+</head>
 
-        <script src="scripts/aaron.js"></script>
-    </body>
+<body>
+    <div id="container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aaron.html">Aaron's Page</a></li>
+                <li><a href="shakti.html">Shakti's Page</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Hello, World!</h1>
+            <small>From Aaron Watts</small>
+        </header>
+
+        <!-- Please leave the list empty, aaron.js 
+            populates it dynamically using the articles 
+            that follow :) -->
+        <section class="page-contents">
+            <h3>On this page:</h3>
+            <ul id="page-contents"></ul>
+        </section>
+
+        <article id="typing-animations">
+            <h2>Typing Animations</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt incidunt aut aliquam praesentium quo
+                temporibus dolore nobis! Tempore odit excepturi quia. Maiores repellendus perferendis quo earum fugit,
+                ipsam excepturi non!</p>
+            <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, iure!</code>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi deleniti amet voluptatem
+                reprehenderit minima eos, ab nihil aut similique qui voluptate explicabo minus tenetur commodi neque
+                mollitia quis laboriosam?</p>
+        </article>
+
+        <article id="form-objects">
+            <h2>Form Objects</h2>
+            <h2>Typing Animations</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt incidunt aut aliquam praesentium quo
+                temporibus dolore nobis! Tempore odit excepturi quia. Maiores repellendus perferendis quo earum fugit,
+                ipsam excepturi non!</p>
+            <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, iure!</code>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi deleniti amet voluptatem
+                reprehenderit minima eos, ab nihil aut similique qui voluptate explicabo minus tenetur commodi neque
+                mollitia quis laboriosam?</p>
+        </article>
+
+    </div>
+
+    <script src="scripts/aaron.js"></script>
+</body>
+
 </html>

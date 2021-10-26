@@ -1,23 +1,12 @@
-const getClock = [...document.querySelectorAll('.aarons-clock > span')];
-const clock = {
-    hh: getClock[0],
-    mm: getClock[2],
-    ss: getClock[3],
-    seperator: getClock[1]
-};
+const pageContents = document.querySelector('ul#page-contents');
+const articles = document.querySelectorAll('article');
 
-setInterval(() => {
-    const now = new Date();
-
-    clock.hh.innerText =
-        now.getHours() < 10 ? `0${now.getHours()}` : now.getHours();
-
-    clock.mm.innerText =
-        now.getMinutes() < 10 ? `0${now.getMinutes()}` : now.getMinutes();
-
-    clock.ss.innerText =
-        now.getSeconds() < 10 ? `0${now.getSeconds()}` : now.getSeconds();
-
-    clock.seperator.classList.toggle('hide');
-
-}, 1000);
+// Build page contents nav
+articles.forEach(article => {
+    const li = document.createElement('li');
+    const anchor = document.createElement('a');
+    anchor.href = `#${article.id}`;
+    anchor.innerText = article.children[0].innerText;
+    li.appendChild(anchor);
+    pageContents.appendChild(li);
+});
