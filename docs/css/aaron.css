@@ -39,7 +39,7 @@ nav.main-nav a:focus {
 code.code-demo {
     white-space: pre;
     display: block;
-    padding: .5em;
+    padding: 1em;
 }
 
 code.code-demo .red {
@@ -57,4 +57,12 @@ article {
     background: white;
     padding: 1rem;
     border-radius: 8px;
+}
+
+div.live-demo {
+    background: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1em 5em;
+    color: white;
 }
