@@ -12,9 +12,8 @@ const hard = [
     '&gt;',
     '+',
     '&semi;',
-    // '\='
 ];
-const soft = ['(', ')', '{', '}', '[', ']', '|', '&amp;', ','];
+const soft = ['(', ')', '{', '}', '[', ']', '|', '&amp;', ',', '.'];
 const equalsRegex = /=/g;
 const semiRegex = /(?<!&\w*);/g;
 

@@ -52,6 +52,7 @@ pre {
     padding: 1em;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
+    overflow-y: scroll;
 }
 
 .code-demo .hard {
