@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
 /* overide container height */
 #container {
     height: 100%;
@@ -48,16 +50,18 @@ pre {
     white-space: pre;
     display: block;
     padding: 1em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
 }
 
-.code-demo .red {
+.code-demo .hard {
     color: hsl(258, 65%, 50%);
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.code-demo .grey {
+.code-demo .soft {
     color: hsl(215, 20%, 30%);
-    font-weight: bold;
+    font-weight: 600;
     opacity: 0.7;
 }
 

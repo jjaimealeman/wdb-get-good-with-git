@@ -1,14 +1,33 @@
 const jsDemos = document.querySelectorAll('.code-demo.js');
-const red = ['const', 'let', 'var', 'if', 'async', 'else', 'return', 'function', '&lt;','&gt;','+'];
-const grey = ['(', ')', '{', '}', '[', ']', '|', '&amp;', ','];
+const hard = [
+    'const',
+    'let',
+    'var',
+    'if',
+    'async',
+    'else',
+    'return',
+    'function',
+    '&lt;',
+    '&gt;',
+    '+',
+    '&semi;',
+    // '\='
+];
+const soft = ['(', ')', '{', '}', '[', ']', '|', '&amp;', ','];
 const equalsRegex = /=/g;
+const semiRegex = /(?<!&\w*);/g;
 
 jsDemos.forEach(script => {
-    script.innerHTML = script.innerHTML.replaceAll(equalsRegex, `<span class="red">=</span>`)
-    for (let term of red) {
-        script.innerHTML = script.innerHTML.replaceAll(term, `<span class="red">${term}</span>`);
+    script.innerText = script.innerText.replaceAll(equalsRegex, `<span class="hard">\=</span>`)
+    script.innerHTML = script.innerText.replaceAll(semiRegex, '<span class="hard">&semi;</span>');
+
+    for (let term of hard) {
+        script.innerHTML =
+            script.innerHTML.replaceAll(term, `<span class="hard">${term}</span>`);
     }
-    for (let term of grey) {
-        script.innerHTML = script.innerHTML.replaceAll(term,`<span class="grey">${term}</span>`);
+    for (let term of soft) {
+        script.innerHTML =
+            script.innerHTML.replaceAll(term, `<span class="soft">${term}</span>`);
     }
 });
