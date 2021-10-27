@@ -62,7 +62,8 @@ const typeText = (text, element) => {
             <p>The <code>typeText</code> function above takes two params, <code>text</code>, and an
                 <code>element</code>. The breakout condition simply requires the length of text to be
                 zero, in which case it's job is done. If the text length is greater than zero, the function
-                will simply add whatever character sits at index zero within the string, and then uses
+                will simply add whatever character sits at index zero within the string to the elements 
+                <code>innerText</code>, and then uses
                 <code>setTimeout</code> to call itself again, with the same element, and the same string,
                 except this time missing the 0th character. I have used substring in this example but you
                 can also use the slice method. I have set the timeout to 60ms as that's what I felt seemed
