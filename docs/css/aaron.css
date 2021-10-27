@@ -38,6 +38,13 @@ article {
     margin: 2rem 1rem;
 }
 
+article,
+button,
+pre,
+.live-demo {
+    box-shadow: #0006 0 3px 3px 0;
+}
+
 /* syntax highlighting rules */
 pre {
     background: var(--bg_body);
@@ -53,6 +60,9 @@ pre {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     overflow-y: scroll;
+    letter-spacing: .08em;
+    line-height: 1.45em;
+    text-shadow: hsla(215, 20%, 30%, .75) 0 1px 1px;
 }
 
 .code-demo .hard {
@@ -66,26 +76,77 @@ pre {
     opacity: 0.7;
 }
 
-div.live-demo {
-    background: #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1em 5em;
+/* Typing Animation Live Demo Style Rules */
+#typing-animations .live-demo {
+    background: #3a0b26e0;
+    height: 6em;
     color: white;
     font-family: 'Source Code Pro', monospace;
+    padding: .8em;
+    letter-spacing: .1em;
+    border-radius: .2em;
+    margin: 1em;
+    text-shadow: #0008 0 1px 1px;
 }
 
-div.live-demo span {
+#typing-animations .live-demo span {
     display: inline;
     font-weight: 400;
 }
 
-div.live-demo span.user {
-    color: green;
+#typing-animations .live-demo span.user {
+    color: #4e9a06;
     font-weight: 600;
 }
 
-div.live-demo span.host {
-    color: blue;
+#typing-animations .live-demo span.host {
+    color: #3465a4;
     font-weight: 600;
+}
+
+#typing-animations .live-demo span.cursor {
+    font-size: 1.2em;
+    font-weight: 600;
+    animation: flash-cursor 1.8s infinite;
+    margin-left: .2em;
+}
+
+@keyframes flash-cursor {
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+#typing-animations .live-demo__controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+    margin: 1em;
+}
+
+#typing-animations .live-demo__controls button {
+    border: none;
+    border-radius: .2em;
+    font-size: 1em;
+    width: 10em;
+    height: 3em;
+    color: var(--bg_body);
+    background:hsl(215, 65%, 45%);
+    font-family: "Poppins", sans-serif;;
+    font-weight: 400;
+    line-height: 1.2em;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+#typing-animations .live-demo__controls button:hover {
+    background: var(--highlight);
+    transform: translateY(-1px);
+    box-shadow: #444d 0 3px 3px;
 }
