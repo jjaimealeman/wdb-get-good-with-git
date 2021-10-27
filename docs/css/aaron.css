@@ -1,12 +1,6 @@
-/*
-* Borrowed from #container in original style sheet
-*/
-.container {
-    background: var(--bg_page);
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0.5em 1.5em;
-    width: 800px;
+/* overide container height */
+#container {
+    height: 100%;
 }
 
 /*
@@ -35,7 +29,14 @@ nav.main-nav a:focus {
     text-shadow: var(--highlight_lighter) 0 0 0.5em;
 }
 
-/*  */
+article {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+}
+
+/* syntax highlighting rules */
 pre {
     background: var(--bg_body);
     color: var(--highlight);
@@ -58,12 +59,6 @@ pre {
     color: hsl(215, 20%, 30%);
     font-weight: bold;
     opacity: 0.7;
-}
-
-article {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
 }
 
 div.live-demo {
