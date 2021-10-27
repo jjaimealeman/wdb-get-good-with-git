@@ -74,9 +74,12 @@ const typeText = (text, element) => {
                 <code>clearTimeout</code> to cancel it!). Hover on the git actions below to see the end result.
             </p>
 
+            <div class="live-demo__controls">
+                <button disabled command="git pull origin main">Show Configured Remotes</button>
+                <button disabled command="git pull origin main">Push Main Branch</button>
+                <button disabled command="git pull origin main">Create and Switch to New Branch</button>
+            </div>
             <div class="live-demo">
-                <a href="#" command="git pull origin main">Git Pull</a><a href="#" command="git push origin main">Git
-                    Push</a>
                 <span><span class="user">aaron-watts</span>@<span class="host">github</span>:~$ <span class="target"></span><span class="cursor">_</span></span>
             </div>
         </article>

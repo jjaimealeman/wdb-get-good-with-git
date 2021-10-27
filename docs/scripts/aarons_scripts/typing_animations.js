@@ -1,5 +1,5 @@
 const typingAnimationTarget = document.querySelector('#typing-animations .target');
-const liveDemoInteractions = document.querySelectorAll('#typing-animations .live-demo a');
+const liveDemoInteractions = document.querySelectorAll('#typing-animations .live-demo__controls button');
 
 let typeInterval;
 
