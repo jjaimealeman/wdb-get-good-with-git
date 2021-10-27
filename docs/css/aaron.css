@@ -72,4 +72,20 @@ div.live-demo {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1em 5em;
     color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+div.live-demo span {
+    display: inline;
+    font-weight: 400;
+}
+
+div.live-demo span.user {
+    color: green;
+    font-weight: 600;
+}
+
+div.live-demo span.host {
+    color: blue;
+    font-weight: 600;
 }
