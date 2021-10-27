@@ -29,17 +29,31 @@
         <!-- Please leave the list empty, aaron.js 
             populates it dynamically using the articles 
             that follow :) -->
-        <section class="page-contents">
+        <nav class="page-contents">
             <h3>On this page:</h3>
             <ul id="page-contents"></ul>
-        </section>
+        </nav>
 
         <article id="typing-animations">
             <h2>Typing Animations</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt incidunt aut aliquam praesentium quo
                 temporibus dolore nobis! Tempore odit excepturi quia. Maiores repellendus perferendis quo earum fugit,
                 ipsam excepturi non!</p>
-            <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, iure!</code>
+
+            <code class="code-demo js">let typeInterval;
+
+const typeText = async (text, elem) => {
+    if (text.length > 0) {
+        elem.innerText += text[0];
+
+        typeInterval = setTimeout(function () {             // assigned so can be cancelled
+            typeText(text.substring(1, text.length), elem) 
+        }, 60);  
+    }
+
+    else return;
+}           </code>
+
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi deleniti amet voluptatem
                 reprehenderit minima eos, ab nihil aut similique qui voluptate explicabo minus tenetur commodi neque
                 mollitia quis laboriosam?</p>
@@ -47,7 +61,6 @@
 
         <article id="form-objects">
             <h2>Form Objects</h2>
-            <h2>Typing Animations</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt incidunt aut aliquam praesentium quo
                 temporibus dolore nobis! Tempore odit excepturi quia. Maiores repellendus perferendis quo earum fugit,
                 ipsam excepturi non!</p>
@@ -59,7 +72,7 @@
 
     </div>
 
-    <script src="scripts/aaron.js"></script>
+    <script src="scripts/aarons_scripts/app.js"></script>
 </body>
 
 </html>
