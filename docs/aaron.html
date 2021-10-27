@@ -36,7 +36,7 @@
 
         <article id="typing-animations">
             <h2>Typing Animations</h2>
-            <p>A good rule to follow is: if it can be done in CSS, then you shouldn't do it in JavaScript. 
+            <p>A good rule to follow is: if it can be done in CSS, then you shouldn't do it in JavaScript.
                 JavaScript is far more taxing on the browser when it comes to animations than CSS. Even so,
                 sometimes CSS just doesn't give the desired effect. I recently wanted to create a typing animation,
                 and while the CSS solutions I found were <em>somewhat</em> effective, they weren't entirely
@@ -44,7 +44,8 @@
                 by character typing effect, I turned to JavaScript and it's yummy recursion.
             </p>
 
-            <code class="code-demo js">let typeInterval;
+            <pre class="code-demo js">
+let typeInterval;
 
 const typeText = (text, element) => {
     if (text.length > 0) {
@@ -56,24 +57,26 @@ const typeText = (text, element) => {
     }
 
     else return;
-}           </code>
+}           </pre>
 
-            <p>The <code>typeText</code> function above takes two params, <code>text</code>, and an 
+            <p>The <code>typeText</code> function above takes two params, <code>text</code>, and an
                 <code>element</code>. The breakout condition simply requires the length of text to be
-            zero, in which case it's job is done. If the text length is greater than zero, the function
-            will simply add whatever character sits at index zero within the string, and then uses
-            <code>setTimeout</code> to call itself again, with the same element, and the same string,
-            except this time missing the 0th character. I have used substring in this example but you
-            can also use the slice method. I have set the timeout to 60ms as that's what I felt seemed
-            convincing, although if you wanted to you could use a randomised number to make it even more
-            realistic. Finally, the <code>setTimeout</code> is assigned to a variable outside of the functions
-            scope, this is not enitrely necessary, but is handy if you want a way to cancel the animation
-            part-way through, i.e. to trigger a different typing animation on the same element (don't forget that
-            the <code>setTimeout</code> is just going to go off and do it's thing unless you call a
-            <code>clearTimeout</code> to cancel it!). Hover on the git actions below to see the end result.</p>
+                zero, in which case it's job is done. If the text length is greater than zero, the function
+                will simply add whatever character sits at index zero within the string, and then uses
+                <code>setTimeout</code> to call itself again, with the same element, and the same string,
+                except this time missing the 0th character. I have used substring in this example but you
+                can also use the slice method. I have set the timeout to 60ms as that's what I felt seemed
+                convincing, although if you wanted to you could use a randomised number to make it even more
+                realistic. Finally, the <code>setTimeout</code> is assigned to a variable outside of the functions
+                scope, this is not enitrely necessary, but is handy if you want a way to cancel the animation
+                part-way through, i.e. to trigger a different typing animation on the same element (don't forget that
+                the <code>setTimeout</code> is just going to go off and do it's thing unless you call a
+                <code>clearTimeout</code> to cancel it!). Hover on the git actions below to see the end result.
+            </p>
 
             <div class="live-demo">
-                <a href="#" command="git pull origin main">Git Pull</a><a href="#" command="git push origin main">Git Push</a>
+                <a href="#" command="git pull origin main">Git Pull</a><a href="#" command="git push origin main">Git
+                    Push</a>
                 aaron-watts@github:~<span class="target"></span>
             </div>
         </article>

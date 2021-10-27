@@ -2,7 +2,7 @@ const pageContents = document.querySelector('ul#page-contents');
 const articles = document.querySelectorAll('article');
 const body = document.querySelector('body');
 
-const jsDemos = document.querySelectorAll('code.js');
+const jsDemos = document.querySelectorAll('.code-demo.js');
 const red = ['const', 'let', 'var', 'if', 'async', 'else', 'return', 'function', '&lt;','&gt;','+'];
 const grey = ['(', ')', '{', '}', '[', ']', '|', '&amp;', ','];
 const equalsRegex = /=/g;

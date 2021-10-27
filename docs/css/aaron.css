@@ -36,18 +36,25 @@ nav.main-nav a:focus {
 }
 
 /*  */
-code.code-demo {
+pre {
+    background: var(--bg_body);
+    color: var(--highlight);
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.code-demo {
     white-space: pre;
     display: block;
     padding: 1em;
 }
 
-code.code-demo .red {
+.code-demo .red {
     color: hsl(258, 65%, 50%);
     font-weight: bold;
 }
 
-code.code-demo .grey {
+.code-demo .grey {
     color: hsl(215, 20%, 30%);
     font-weight: bold;
     opacity: 0.7;
