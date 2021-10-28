@@ -2,13 +2,39 @@
 
 ---
 
-As you all know, using `git` in a work environment is crucial for a Web Developers workflow. It is even more important when working with others.
+I created this repo with the help of friends Aaron Watts and Shakti.
 
-I created this repo with the help of friends Aaron Watts and Shakti
+We are all students of the [Web Developers Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele on Udemy and members of their [Facebook Group](https://www.facebook.com/groups/officialwebdeveloperbootcamp).
 
-> ![git.png](https://img.icons8.com/color/48/000000/git.png) `git` is a version control system. It tracks all changes made to files under its directory.
+---
 
-> ![github.png](https://img.icons8.com/windows/32/000000/github.png) [Github](https://github.com/) is a cloud-based repository for storing files.
+## What is this about? What is the objective?
+
+As you all know, using `git` in your environment is crucial for a Web Developers workflow. It is even more important when working with others.
+
+Throughout my time on the FB group, I realized that not many members were familiar with `git` and wanted to learn.
+
+So, one day I [created a poll](https://www.facebook.com/groups/officialwebdeveloperbootcamp/posts/4656639691068240) and was thrilled at the outcome.
+
+![facebookpollscreenshot](https://i.imgur.com/yy9BYC8.png)
+
+---
+
+### What is git?
+
+> ![git.png](https://img.icons8.com/color/48/000000/git.png) `git` is a version control system.
+>
+> It tracks all changes made to files under its directory and allows developers to quickly revert back to any version of any file. Also makes project collaboration easier by multiple authors and makes it easy to merge all changes into one source.
+
+### What is Github?
+
+> ![github.png](https://img.icons8.com/windows/32/000000/github.png) [Github](https://github.com/) is a cloud-hosted website for storing files under version control using `git`.
+>
+> It is used for code sharing, debugging, and collaboration. It is also a Social Networking site used by Developers and Programmers all around the world!
+
+### Why is git important and how can git help me?
+
+>
 
 ---
 
