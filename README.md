@@ -28,9 +28,9 @@ So, one day I [created a poll](https://www.facebook.com/groups/officialwebdevelo
 >
 > It is used for code sharing, debugging, and collaboration. It is also a [Social Networking](https://docs.github.com/en/get-started/quickstart/be-social) site used by Developers and Programmers all around the world!
 
-### You should know that Github is not the only place where you can store your files. Other popular alternatives are [Gitlab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org/product/).
+You should know that Github is not the only place where you can store your files. Other popular alternatives are [Gitlab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org/product/).
 
-### However Github has proven to be the Industry Standard, is far larger than all the others, and has seamless integration with many online services.
+However Github has proven to be the Industry Standard, is far larger than all the others, and has seamless integration with many online services.
 
 ---
 
@@ -112,3 +112,7 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 ---
 
 ### This `readme.md` is in a constant state of revision. If you spot any errors, please let me know.
+
+## TEST 👇
+
+Here's a link to the previous version of this `README.md` renamed [LearnGIT.md](LearnGIT.md).
