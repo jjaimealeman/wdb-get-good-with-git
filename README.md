@@ -2,7 +2,6 @@
 
 ---
 
-https://laragon.org/docs/directory-structure.html
 As you all know, using `git` in a work environment is crucial for a Web Developers workflow. It is even more important when working with others.
 
 I created this repo with the help of friends Aaron Watts and Shakti
