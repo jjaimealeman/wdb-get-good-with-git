@@ -1,6 +1,6 @@
-## Welcome to our new repo, where **we all** learn to get good with `git` 😁
+## Welcome to our new repository, where **we all** learn to get good with `git` 😁
 
-I created this repo with the help of friends Aaron Watts and Shakti Sarkar.
+I created this repository with the help of friends Aaron Watts and Shakti Sarkar.
 
 We are all students of the [Web Developers Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele on Udemy and members of their [Facebook Group](https://www.facebook.com/groups/officialwebdeveloperbootcamp).
 
@@ -36,11 +36,11 @@ So, one day I [created a poll](https://www.facebook.com/groups/officialwebdevelo
 
 ## **I DO NOT** claim to know everything there is to know about `git`, as I have only ever used it in my own [personal projects](https://github.com/jjaimealeman).
 
-The purpose of this repo is for **us/we/me/you** to learn the basics of using `git`, both for personal use as well as in a team environment.
+The purpose of this repository is for **us/we/me/you** to learn the basics of using `git`, both for personal use as well as in a team environment.
 
 ---
 
-> ## This is my first ever collaborative repo working with others. So forgive me as I learn how to manage the collaborative tools that Github has to offer.
+> ## This is my first ever collaborative repository working with others. So forgive me as I learn how to manage the collaborative tools that Github has to offer.
 
 ---
 
