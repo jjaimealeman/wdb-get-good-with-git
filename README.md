@@ -26,7 +26,11 @@ So, one day I [created a poll](https://www.facebook.com/groups/officialwebdevelo
 
 > ![github.png](https://img.icons8.com/windows/32/000000/github.png) [Github](https://github.com/) is a cloud-hosted website for storing files under version control using `git`.
 >
-> It is used for code sharing, debugging, and collaboration. It is also a Social Networking site used by Developers and Programmers all around the world!
+> It is used for code sharing, debugging, and collaboration. It is also a [Social Networking](https://docs.github.com/en/get-started/quickstart/be-social) site used by Developers and Programmers all around the world!
+
+### You should know that Github is not the only place where you can store your files. Other popular alternatives are [Gitlab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org/product/).
+
+### However Github has proven to be the Industry Standard, is far larger than all the others, and has seamless integration with many online services.
 
 ---
 
@@ -42,11 +46,11 @@ The purpose of this repository is for **us/we/me/you** to learn the basics of us
 
 ## First Steps:
 
-1. Watch this repo.
-2. Fork this repo.
-3. Clone your repo.
+1. Watch this repo. [What is Watching?](https://docs.github.com/en/get-started/quickstart/be-social#watching-a-repository)
+2. Fork this repo. [What is Forking?](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+3. Clone your repo. [What is Cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-If you are an absolute beginner and know nothing about `git`, then I encourage you to check out [these GitHub docs](https://docs.github.com/en/get-started/using-git).
+If you are an absolute beginner and know nothing about `git`, then I encourage you to check out [these GitHub docs](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
 ---
 
@@ -74,6 +78,10 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 >
 > Displays what has been recently modified, added, or deleted.
 
+> `git log`
+>
+> Displays all commit messages and their unique hash, the author, date of commit, and commit message.
+
 > `git branch`
 >
 > Displays the current working branch _(by default called `main` or `master`)_.
@@ -94,7 +102,12 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 >
 > When files are modified to the local repository, they can be synced with the online repository.
 
-I have used these for years and type them a hundred times per day.
+## I have used these commands for years and I type them a hundred times per day.
+
+## Need a cheatsheet? There's lots to learn and memorize 👍
+
+1. https://www.freecodecamp.org/news/git-cheat-sheet/
+2. https://git-scm.com/docs
 
 ---
 
