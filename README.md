@@ -1,18 +1,14 @@
 ## Welcome to our new repo, where **we all** learn to get good with `git` 😁
 
----
-
-I created this repo with the help of friends Aaron Watts and Shakti.
+I created this repo with the help of friends Aaron Watts and Shakti Sarkar.
 
 We are all students of the [Web Developers Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele on Udemy and members of their [Facebook Group](https://www.facebook.com/groups/officialwebdeveloperbootcamp).
 
----
-
 ## What is this about? What is the objective?
 
-As you all know, using `git` in your environment is crucial for a Web Developers workflow. It is even more important when working with others.
+Using `git` in your environment is crucial for a Web Developers workflow. It is even more important when working with others.
 
-Throughout my time on the FB group, I realized that not many members were familiar with `git` and wanted to learn.
+Throughout my time on the [FB group](https://www.facebook.com/groups/officialwebdeveloperbootcamp), I realized that not many members were familiar with `git`.
 
 So, one day I [created a poll](https://www.facebook.com/groups/officialwebdeveloperbootcamp/posts/4656639691068240) and was thrilled at the outcome.
 
@@ -62,6 +58,44 @@ If you are an absolute beginner and know nothing about `git`, then I encourage y
 
 These **9 commands** are absolutely the BASIC ones you will most likely use for this project repo.
 
-> `git init` ; `git clone` ; `git add` ; `git commit` ; `git status` ; `git branch` ; `git merge` ; `git pull` ; `git push`
+> `git init`
+>
+> Initializes `git` and begins the process for adding your files to version control.
+
+> `git clone`
+>
+> Makes an exact duplicate on your computer - complete with all history of file revisions.
+
+> `git add`
+>
+> Tells `git` that a file has been modified and has now been added to version control.
+
+> `git commit`
+>
+> Inserts a comment in the histroy of a file _(or multiple files)_ stating what was modified, added, or delete.
+
+> `git status`
+>
+> Displays what has been recently modified, added, or deleted.
+
+> `git branch`
+>
+> Displays the current working branch _(by default called `main` or `master`)_.
+>
+> It is a common practice to have more than one branch where other work is being done without "breaking" the original environment in `main`.
+
+> `git merge`
+>
+> Another branch can be created to make many edits to many files in a safe environment without altering the original files in in `main` and later `merge` them together.
+>
+> This is commonly done when adding new Features to `main` or Bug-Fixing.
+
+> `git pull`
+>
+> When files are modified to the online reposity, they can be synced with the local repository.
+
+> `git push`
+>
+> When files are modified to the local repository, they can be synced with the online repository.
 
 I have used these for years and type them a hundred times per day.
