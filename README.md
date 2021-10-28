@@ -28,10 +28,6 @@ So, one day I [created a poll](https://www.facebook.com/groups/officialwebdevelo
 >
 > It is used for code sharing, debugging, and collaboration. It is also a Social Networking site used by Developers and Programmers all around the world!
 
-### Why is git important and how can git help me?
-
->
-
 ---
 
 ## **I DO NOT** claim to know everything there is to know about `git`, as I have only ever used it in my own [personal projects](https://github.com/jjaimealeman).
@@ -56,7 +52,7 @@ If you are an absolute beginner and know nothing about `git`, then I encourage y
 
 ## Commands to get your started
 
-These **9 commands** are absolutely the BASIC ones you will most likely use for this project repo.
+These **9 commands** are absolutely the BASIC ones you will most likely use for this project repo, and they will also apply to your own personal projects.
 
 > `git init`
 >
@@ -86,7 +82,7 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 
 > `git merge`
 >
-> Another branch can be created to make many edits to many files in a safe environment without altering the original files in in `main` and later `merge` them together.
+> Another branch can be created to make many edits to many files in a safe environment without altering the original files in `main` and later `merge` them together.
 >
 > This is commonly done when adding new Features to `main` or Bug-Fixing.
 
@@ -99,3 +95,7 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 > When files are modified to the local repository, they can be synced with the online repository.
 
 I have used these for years and type them a hundred times per day.
+
+---
+
+### This `readme.md` is in a constant state of revision. If you spot any errors, please let me know.
