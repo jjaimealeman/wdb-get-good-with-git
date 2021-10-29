@@ -1,0 +1,40 @@
+pre.syntax-highlighted .sh-fn {
+    color: hsl(281, 65%, 50%);
+}
+
+pre.syntax-highlighted .sh-hard {
+    color: hsl(258, 65%, 50%);
+    font-weight: 600;
+}
+
+pre.syntax-highlighted .sh-soft {
+    color: hsl(215, 20%, 30%);
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+pre.syntax-highlighted .sh-class {
+    font-weight: bold;
+}
+
+pre.syntax-highlighted .sh-comment {
+    color: grey;
+}
+
+pre.syntax-highlighted .sh-comment > * {
+    color: grey !important;
+    font-weight: normal !important;
+}
+
+pre.syntax-highlighted .sh-string {
+    color: blue;
+}
+
+pre.syntax-highlighted .sh-string > * {
+    color: blue !important;
+    font-weight: normal !important;
+}
+
+pre.syntax-highlighted .sh-int {
+    color: hsl(258, 60%, 50%);
+}
