@@ -66,22 +66,11 @@ pre {
     margin: 1.5rem 2.5rem;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
-    font-size: .9em;
+    font-size: .8em;
     overflow-y: scroll;
     letter-spacing: .07em;
     line-height: 1.45em;
     text-shadow: hsla(215, 20%, 30%, .75) 0 1px 1px;
-}
-
-.code-demo .hard {
-    color: hsl(258, 65%, 50%);
-    font-weight: 600;
-}
-
-.code-demo .soft {
-    color: hsl(215, 20%, 30%);
-    font-weight: 600;
-    opacity: 0.7;
 }
 
 /* Typing Animation Live Demo Style Rules */
@@ -95,6 +84,8 @@ pre {
     border-radius: .2em;
     margin: .5rem 2.5rem;
     text-shadow: #0008 0 1px 1px;
+    text-align: left;
+    word-break: break-all;
 }
 
 #typing-animations .live-demo span {
