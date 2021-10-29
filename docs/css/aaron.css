@@ -66,22 +66,52 @@ pre {
     margin: 1.5rem 2.5rem;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
-    font-size: .9em;
+    font-size: .8em;
     overflow-y: scroll;
     letter-spacing: .07em;
     line-height: 1.45em;
     text-shadow: hsla(215, 20%, 30%, .75) 0 1px 1px;
 }
 
-.code-demo .hard {
+pre.syntax-highlighted .sh-fn {
+    color: hsl(281, 65%, 50%);
+}
+
+pre.syntax-highlighted .sh-hard {
     color: hsl(258, 65%, 50%);
     font-weight: 600;
 }
 
-.code-demo .soft {
+pre.syntax-highlighted .sh-soft {
     color: hsl(215, 20%, 30%);
     font-weight: 600;
     opacity: 0.7;
+}
+
+pre.syntax-highlighted .sh-class {
+    font-weight: bold;
+}
+
+pre.syntax-highlighted .sh-comment {
+    color: grey;
+}
+
+pre.syntax-highlighted .sh-comment > * {
+    color: grey !important;
+    font-weight: normal !important;
+}
+
+pre.syntax-highlighted .sh-string {
+    color: blue;
+}
+
+pre.syntax-highlighted .sh-string > * {
+    color: blue !important;
+    font-weight: normal !important;
+}
+
+pre.syntax-highlighted .sh-int {
+    color: hsl(258, 60%, 50%);
 }
 
 /* Typing Animation Live Demo Style Rules */
