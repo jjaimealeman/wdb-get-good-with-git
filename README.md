@@ -64,7 +64,7 @@ These **9 commands** are absolutely the BASIC ones you will most likely use for 
 
 > `git clone`
 >
-> Makes an exact duplicate on your computer - complete with all history of file revisions.
+> Makes an exact duplicate on your computer of a repository online - complete with all history of file revisions.
 
 > `git add`
 >
