@@ -35,6 +35,169 @@
             <ul id="page-contents"></ul>
         </nav>
 
+        <article id="form-objects">
+            <h2>Form Objects</h2>
+            <p>Forms have a few special characteristics when compared to other elements.
+                I will outline them here, and show you how you can make use of them. We
+                will refer to the markup below for the entirety of this article, it is
+                simple, yet sufficient for what we will be doing..
+            </p>
+            <pre class="code-demo">
+&lt;form id="my-form" action="/nowhere"&gt;
+
+    &lt;label for="my-form__name"&gt;Name&lt;/label&gt;
+    &lt;input id="my-form__name" type="text" name="myForm[name]"&gt;
+
+    &lt;label for="my-form__email"&gt;Email&lt;/label&gt;
+    &lt;input id="my-form__email" type="text" name="myForm[email]"&gt;
+
+    &lt;button id="my-form__submit"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;</pre>
+            <h3><em>1.</em> Forms are Iterable</h3>
+            <p>
+                Normally, to access an elements children, you would need to use
+                <code>element.children[i]</code>. Forms, however, allow you to
+                directly access their child elements without needing to type
+                <code>.children</code>. Furthermore, using this method will ignore
+                any elements that aren't interactable within the form. With regard
+                to the markup above, <code>form[0]</code> would reference the
+                name input, while <code>form[2]</code> would reference
+                the submit button.
+            </p>
+            <p>
+                Even more convenient, if our interactable form elements have been
+                asigned <code>id</code>'s, like in the markup above, we can simply
+                use the <code>id</code> like so, <code>form.buttonId</code>. 
+                This is particularly useful, as if we wish to add a new field to our
+                form, we don't have to worry about messing up our indexing.
+                The
+                markup above has a complex <code>id</code> naming structure (for
+                reasons that will become clear later), so we would have to use
+                bracket notation in this case, <code>form['my-form__name']</code>.
+            </p>
+
+            <h3><em>2.</em> Forms are Pre-Cached</h3>
+            <p>
+                We are mostly taught to cache our form like this:
+            </p>
+            <p><code>const myForm = document.querySelector('form');</code></p>
+            <p>
+                But forms are so widely used in web development, that forms are
+                in fact pre-cached onto the <code>document</code> object. The
+                <code>document.forms</code> object returns an array of all the
+                forms on a given page. Like the form objects we've already spoken
+                about, they are iterable! So, to access our form, that is the only
+                one on it's page, we'd simply need to reference
+                <code>document.forms[0]</code>. Or better yet, use it's <code>id</code>,
+                <code>document.forms['my-form']</code>.
+            </p>
+
+            <h3>Making Use of these Characteristics</h3>
+            <p>
+                Working with a lot of forms holding varied data can be taxing when
+                you are still new to coding (I speak from experience!).
+                But, by leveraging these characteristics of forms, we can make our work
+                a lot easier. Let's take a look at the following javascript, and break
+                down how it would interact with the form markup we are using.
+            </p>
+            <pre class="code-demo syntax-highlighted js">
+const form = {
+    id: 'my-form',
+    init: () => {
+        form.form = document.forms[form.id];
+        form.submitButton = form.form[`${form.id}__submit`];
+    },
+    validate: () => {
+        for (let elem of form.form) {
+            if (elem !== form.submitButton && !elem.value) {
+                console.log('VALIDATION ERROR!');
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+form.init();
+
+form.submitButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    if (form.validate()) form.form.submit();
+});</pre>
+            <p>If you are still learning JavaScript, this could look deceptively 
+                complicated, but it's not. Let's break it down...
+            </p>
+            <p>
+                First we have created a "form" <code>object</code>, for now let's
+                just concern ourselves with <code>form.id</code> and
+                <code>form.init</code>. <code>form.id</code> is simple, it's just
+                a string that matches the form's <code>id</code> in the markup. The
+                <code>form.init</code> method simply adds the <code>form</code> and
+                <code>submitButton</code> properties to the object - we need to
+                access the <code>form.id</code> property in order to do this, which
+                isn't accessable until after the form <code>object</code> is
+                created, therefore they are added after the fact when 
+                <code>form.init()</code> is called.
+            </p>
+            <p>
+                Next, let's look at the event listener. It is attached to the
+                <code>form.submitButton</code>. We are using 
+                <code>event.preventDefault()</code> to gain a little control over
+                what the submit button should do. We will only call the form's
+                <code>submit</code> method if our <code>validate</code> method,
+                defined in the form <code>object</code>, returns <code>true</code>.
+            </p>
+            <p>
+                The <code>form.validate</code> method is checking that none
+                of the input fields are left blank, you could write seperate
+                validation rules depending on the input types, or anything else
+                you might need to check before a form submission. The 
+                <code>validate</code> method iterates through the form elements -
+                don't forget the <code>button</code> element is included here, so 
+                in our if
+                statement we first check that the current <code>elem</code> is not
+                the form's
+                <code>submitButton</code>, if that condition is passed then the
+                element we are currently iterating over must be an input. We then
+                check for the absence <code>!</code> of a <code>value</code> on the 
+                input, if there is not value present, then the input has been left 
+                blank,
+                and we use <code>return false</code> to break out of the method.
+                Otherwise, the method returns <code>true</code> after the loop,
+                and the <code>form.submit</code> method is executed.
+            </p>
+            <p>
+                Despite the benefit of tidy code, it may not be necessary to
+                move the form into an object, however I have used this to demonstrate
+                he concept, because where there is an object, there 
+                can be a class to create many objects. Using template strings and 
+                an id naming structure
+                like in the above example, 
+                will also make code more reusable
+                throughout a project. Take a look at a simpler
+                implementation below.
+            </p>
+            <pre class="code-demo syntax-highlighted js">
+const formId = 'my-form';
+const form = document.forms[formId];
+
+const validate = (form) => {
+    for (let elem of form) {
+        if (elem !== form[`${formId}__submit`] && !elem.value) {
+            console.log('VALIDATION ERROR!');
+            return false;
+        }
+    }
+    return true;
+}
+
+form[`${formId}__submit`].addEventListener('click', (evt) => {
+    evt.preventDefault();
+    if (validate(form)) form.submit();
+});</pre>
+        </article>
+
         <article id="typing-animations">
             <h2>Typing Animations</h2>
             <p>A good rule to follow is: if it can be done in CSS, then you shouldn't do it in JavaScript.
@@ -63,7 +226,7 @@ const typeText = (text, element) => {
             <p>The <code>typeText</code> function above takes two params, <code>text</code>, and an
                 <code>element</code>. The breakout condition simply requires the length of text to be
                 zero, in which case it's job is done. If the text length is greater than zero, the function
-                will simply add whatever character sits at index zero within the string to the elements 
+                will simply add whatever character sits at index zero within the string to the elements
                 <code>innerText</code>, and then uses
                 <code>setTimeout</code> to call itself again, with the same element, and the same string,
                 except this time missing the 0th character. I have used substring in this example but you
@@ -82,19 +245,9 @@ const typeText = (text, element) => {
                 <button command="git switch -c newBranch">Create and Switch to New Branch</button>
             </div>
             <div class="live-demo">
-                <span><span class="user">aaron-watts</span>@<span class="host">github.io</span>:<span class="host">~</span>$ <span class="target"></span><span class="cursor">_</span></span>
+                <span><span class="user">aaron-watts</span>@<span class="host">github.io</span>:<span
+                        class="host">~</span>$ <span class="target"></span><span class="cursor">_</span></span>
             </div>
-        </article>
-
-        <article id="form-objects">
-            <h2>Form Objects</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt incidunt aut aliquam praesentium quo
-                temporibus dolore nobis! Tempore odit excepturi quia. Maiores repellendus perferendis quo earum fugit,
-                ipsam excepturi non!</p>
-            <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, iure!</code>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eligendi deleniti amet voluptatem
-                reprehenderit minima eos, ab nihil aut similique qui voluptate explicabo minus tenetur commodi neque
-                mollitia quis laboriosam?</p>
         </article>
 
     </div>
