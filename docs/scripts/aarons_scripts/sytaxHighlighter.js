@@ -1,4 +1,5 @@
 const highlightJS = document.querySelectorAll('pre.syntax-highlighted.js');
+const highlightHTML = document.querySelectorAll('pre.syntax-highlighted.html');
 
 const javascriptSyntax = {
     expressions: {
@@ -8,7 +9,7 @@ const javascriptSyntax = {
         'comments': /(?:^|[^\\])(\/\/.*)$|\/\*[\s\S]*?\*\//gm,
         'classNames': /\s[A-Z]\w*/g,
         'number': /[\b\W](-?\d+)\b/g,
-        'punctuationSoft': /[[\](){}:]+|(?<!&\w*);/g,
+        'punctuationSoft': /[[\](){}:.]+|(?<!&\w*);/g,
         'punctuationHard': /[\+\*!|?]|(&gt;|&lt;|&amp;)|\B=\B|=(?!")/g,
         'strings': /"(?:[^"\\]|\\.)*"|('(?:[^'\\]|\\.)*')|`(?:[^`\\]|\\.)*`/g
     },
@@ -74,3 +75,11 @@ const javascriptSyntax = {
 highlightJS.forEach(sample => {
     sample.innerHTML = javascriptSyntax.parse(sample);
 });
+
+highlightHTML.forEach(sample => {
+    sample.innerHTML = sample.innerHTML.replaceAll(/(?<=\s)\w+\="(?:[^"\\]|\\.)*"/g,
+        `<span class="sh-class">$&</span>`);
+
+    sample.innerHTML = sample.innerHTML.replaceAll(/(?<=&lt;\/*)\w+/g,
+        `<span class="sh-hard">$&</span>`);
+})
