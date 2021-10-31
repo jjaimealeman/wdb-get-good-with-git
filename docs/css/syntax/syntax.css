@@ -7,6 +7,10 @@ pre.syntax-highlighted .sh-hard {
     font-weight: 600;
 }
 
+pre.syntax-highlighted.html .sh-hard {
+    color: hsl(258, 65%, 50%);
+}
+
 pre.syntax-highlighted .sh-soft {
     color: hsl(215, 20%, 30%);
     font-weight: 600;
@@ -17,17 +21,22 @@ pre.syntax-highlighted .sh-class {
     font-weight: bold;
 }
 
+pre.syntax-highlighted.html .sh-class {
+    color: hsl(215, 20%, 30%);
+    font-weight: bold;
+}
+
 pre.syntax-highlighted .sh-int,
 pre.syntax-highlighted .sh-int > * {
     color: hsl(258, 60%, 50%);
 }
 
 pre.syntax-highlighted .sh-string {
-    color: blue;
+    color: hsl(215, 80%, 30%);
 }
 
 pre.syntax-highlighted .sh-string * {
-    color: blue !important;
+    color: hsl(215, 80%, 30%) !important;
     font-weight: normal !important;
 }
 
