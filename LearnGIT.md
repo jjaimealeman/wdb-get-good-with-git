@@ -49,7 +49,7 @@ I have used these for years and type them a hundred times per day.
     >
     > In this screenshot, before I run `git init`, I run the command `ll`. In Linux that command says "List Files". After `ll` I run `git init` and you see the following when I run `ll` again, it shows a folder called `.git` in the new-test-folder`.
     >
-    > ![screenshot-git-init-new-folder.png](docs/images/screenshot-git-init-new-folder.png)
+    > ![screenshot of git init command](docs/images/screenshot-git-init-new-folder.png)
 2. `git clone`
 
     > This will make a copy of a remote repo on your local machine. This will contain all the files and folder structure, the entire commit history and the branches.
@@ -64,7 +64,7 @@ I have used these for years and type them a hundred times per day.
     > >
     > > `git clone https://github.com/jjaimealeman/wdb-get-good-with-git.git`
     >
-    > ![screenshot-git-clone-repo.png](docs/images/screenshot-git-clone-repo.png)
+    > ![screenshot of git clone command](docs/images/screenshot-git-clone-repo.png)
 
     ***
 
@@ -94,15 +94,21 @@ I have used these for years and type them a hundred times per day.
     >
     > I also deleted `file-that-i-will-delete.txt` and `docs/images/screenshot-git-status.png` as shown with a red capital "D" on the left.
     >
-    > ![screenshot-git-status.png](docs/images/screenshot-git-status.png)
+    > ![Screenshot of git status command](docs/images/screenshot-git-status.png)
+
+    >Note that this will look a bit different depending on which commandline tool and OS you are using.  You can also modify how git status looks by adding a bunch of different customization.  Here is how just the plain git status looks in Git Bash for Windows:
+    > ![Screenshot of Git Bash Git Status](docs/images/screenshot-git-bash-git-status.PNG)
+
 
 4. `git add`
 
     > I start with a plain `.html` document skeleton and later plan on including some Google Fonts and a nice background image. I decide to `git add docs/index.html` before I work on the CSS.
+
+    >> `git add` moves a file or files to a "staging area", which isn't really a location, just a status, but it must be in this before committing.
     >
     > So I `git status` followed by `git add docs/index.html`
     >
-    > ![screenshot-git-add-index.png](docs/images/screenshot-git-add-index.png)
+    > ![screenshot of git add command](docs/images/screenshot-git-add-index.png)
 
 5. `git commit`
 
@@ -113,16 +119,27 @@ I have used these for years and type them a hundred times per day.
     >
     > `git add docs/index.html && git commit -m'index.html added H1 and #container with paragraphs'`
     >
-    > ![screenshot-git-add-commit.png](docs/images/screenshot-git-add-commit.png)
+    > ![screenshot of git commit](docs/images/screenshot-git-add-commit.png)
 
+    > The first time you create a file you must add it via a distinct `git add` command although you can combine it as mentioned in one command with `&&`, but after that initial add, you can combine the add and commit into a single command via `git commit -a -m` or `git commit -am` (the '-a' is what does the initial add).
+
+6. `git log`
+
+    > To get a quick understanding of the previous commits in your branch, you can run `git log`. It will list (from most recent to last) all previous commits, including the commit "id" or "hash," author, date, and commit message.  At least without any customization:
+    > ![screenshot of git log](docs/images/screenshot-git-log.PNG)
+    
+    > You can customize the `git-log` display in many ways by adding various options.  A popular one is `git-log --oneline` which displays a shortened id/hash and the commit message, and some critical info (where the HEAD is, which branches were merged in a commit, etc.):
+    > ![screenshot of git log --oneline](docs/images/screenshot-git-log-oneline.PNG)
+
+    > Many other useful customizations can be used for `git log`.  Here is a [good article](https://willi.am/blog/2015/02/19/customize-your-git-log-format/) on doing this both for inidividual commands but also setting the default format for how `git commit` alone will look when you type it in the command line.
 ---
 
 ## To Do (for another day):
 
--   [ ] 6. `git branch`
--   [ ] 7. `git merge`
--   [ ] 8. `git pull`
--   [ ] 9. `git push`
+-   [ ] 7. `git branch`
+-   [ ] 8. `git merge`
+-   [ ] 9. `git pull`
+-   [ ] 10. `git push`
 
 ## Recommended reading
 
