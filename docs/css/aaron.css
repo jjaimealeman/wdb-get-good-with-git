@@ -5,7 +5,7 @@
     height: 100%;
 }
 /* ham,burger menu */
-.hamburger {
+.child {
     display: none;
 }
 /*
@@ -155,7 +155,7 @@ pre {
 }
 /* making hambergur menu for mobile and tablet devices */
 @media (max-width: 700px) {
-    .hamburger {
+    .child {
         display: block;
         height: 25px;
         width: 25px;
