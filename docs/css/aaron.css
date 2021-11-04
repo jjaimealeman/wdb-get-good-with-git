@@ -71,10 +71,22 @@ pre {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     font-size: .8em;
-    overflow-y: scroll;
+    overflow-x: scroll;
     letter-spacing: .07em;
     line-height: 1.45em;
     text-shadow: hsla(215, 20%, 30%, .75) 0 1px 1px;
+}
+
+/* page main media queries */
+@media screen and (max-width: 700px) {
+    article {
+        margin: 2rem 0;
+    }
+
+    .code-demo {
+        margin: 1.5rem 0;
+        font-size: .7em;
+    }
 }
 
 /* Typing Animation Live Demo Style Rules */
@@ -153,6 +165,7 @@ pre {
     transform: translateY(-1px);
     box-shadow: #444d 0 3px 3px;
 }
+
 /* making hambergur menu for mobile and tablet devices */
 @media (max-width: 700px) {
     .child {
