@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap');
 
+:root {
+    --scrollbar-size: 8px;
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+    background-color: #aaa; /* or add it to the track */
+}
+::-webkit-scrollbar-thumb {
+    border-radius: calc(var(--scrollbar-size) / 2);
+    background: #0007;
+}
+
 /* overide container height */
 #container {
     height: 100%;
