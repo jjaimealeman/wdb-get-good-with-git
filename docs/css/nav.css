@@ -26,6 +26,11 @@ nav.main-nav a:focus {
     text-shadow: var(--highlight_lighter) 0 0 0.5em;
 }
 
+/* ham,burger menu */
+.child {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .child {
         display: block;

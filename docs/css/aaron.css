@@ -18,10 +18,6 @@
 #container {
     height: 100%;
 }
-/* ham,burger menu */
-.child {
-    display: none;
-}
 
 article {
     background: white;
