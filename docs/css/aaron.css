@@ -1,38 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap');
 
+:root {
+    --scrollbar-size: 8px;
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+    background-color: #aaa; /* or add it to the track */
+}
+::-webkit-scrollbar-thumb {
+    border-radius: calc(var(--scrollbar-size) / 2);
+    background: #0007;
+}
+
 /* overide container height */
 #container {
     height: 100%;
-}
-/* ham,burger menu */
-.child {
-    display: none;
-}
-/*
-* Nav Styling
-*/
-nav.main-nav {
-    /* width: 95vw; */
-    width: 100%;
-    font-size: 1.2rem;
-}
-
-nav.main-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-
-nav.main-nav a {
-    text-decoration: none;
-    color: var(--highlight);
-    transition: text-shadow 0.15s ease-in-out;
-}
-
-nav.main-nav a:hover,
-nav.main-nav a:focus {
-    text-shadow: var(--highlight_lighter) 0 0 0.5em;
 }
 
 article {
@@ -197,31 +181,3 @@ pre {
     }
 }
 
-/* making hambergur menu for mobile and tablet devices */
-@media (max-width: 700px) {
-    .child {
-        display: block;
-        height: 25px;
-        width: 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 90%;
-    }
-   nav.main-nav ul {
-       background: hsl(215, 65%, 85%);
-       position: absolute;
-       height: 85vh;
-       width: 60%;
-       bottom: 0;
-       right: 0;
-       flex-direction: column;
-       justify-content: space-evenly;
-       align-items: center;
-       border-radius: 10px 0 0 10px;
-       opacity: 0;
-       transition: opacity .2s linear;
-   }
-   nav.main-nav .visible {
-       opacity: 1;
-   }
-}
